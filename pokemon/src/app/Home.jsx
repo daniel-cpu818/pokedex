@@ -3,7 +3,7 @@ import NameForm from "./components/NameForm";
 
 function Home() {
   return (
-    <div className="w-full h-dvh flex items-center justify-start pl-10 bg-[url('public/vecteezy_lightning-yellow-mouse-background_24993881.svg')] bg-repeat bg-cover">
+    <div className="w-full h-dvh flex items-center justify-start pl-10 bg-[url('/vecteezy_lightning-yellow-mouse-background_24993881.svg')] bg-repeat bg-cover">
     <div className="text-left px20">
       <a href="https://fontmeme.com/es/fuente-pokemon/">
         <img

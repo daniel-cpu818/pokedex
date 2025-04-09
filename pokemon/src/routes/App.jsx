@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { Routes, Route } from 'react-router'
 import Home from '../app/Home'
-import Protected from './protected'
+import Protected from './Protected'
 import MainLayout from '../layout/MainLayout'
 import Pokedex from '../app/Pokedex'
 import Details from '../app/details/Details'

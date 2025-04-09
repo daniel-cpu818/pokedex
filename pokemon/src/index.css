@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  @apply bg-gray-100 text-gray-900;
+}
+
+@layer components {
+  .input {
+    @apply bg-gray-200 border border-gray-300 rounded-lg py-1.5 px-3 outline-0;
+  }
+
+  .btn {
+    @apply bg-red-500 text-white font-semibold py-1.5 px-4 rounded-lg hover:bg-red-600 transition duration-300;
+  }
+}
+
+@layer utilities {
+  
+}

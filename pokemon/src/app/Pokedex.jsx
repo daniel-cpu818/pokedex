@@ -86,17 +86,20 @@ function Pokedex() {
     <div>
   
   {loading && (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-red-100 to-blue-100 z-50">
-      {/* Pokéball Spinner */}
-      <div className="w-24 h-24 border-[6px] border-black border-t-white border-b-white rounded-full animate-spin relative">
-        <div className="absolute top-1/2 left-1/2 w-6 h-6 bg-white border-4 border-black rounded-full -translate-x-1/2 -translate-y-1/2 z-10"></div>
-      </div>
+  <div className="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-red-100 to-blue-100 z-50">
+  {/* GIF en lugar del spinner */}
+  <img
+    src="/running-pikachu-transparent-snivee.gif"
+    alt="Cargando Pokémon"
+    className="w-48 h-auto drop-shadow-lg rounded-xl"
+  />
 
-      {/* Texto tipo Pokémon */}
-      <p className="mt-6 text-xl font-bold text-red-600 tracking-wide animate-pulse">
-        ¡Buscando Pokemones!
-      </p>
-    </div>
+  {/* Texto tipo Pokémon */}
+  <p className="mt-6 text-xl font-bold text-red-600 tracking-wide animate-pulse">
+    ¡Buscando Pokemones!
+  </p>
+</div>
+
   )}
 
 
@@ -104,7 +107,7 @@ function Pokedex() {
      <>
      <div className="max-w-5xl mx-auto px-4 py-6">
        {/* Encabezado estilizado */}
-       <h2 className="text-center text-2xl font-bold mb-6 text-gray-800">
+       <h2 className="text-center text-2xl font-bold mb-6 text-gray-800 m-2.5">
          <span className="text-red-500">Bienvenido {name.state.name}</span> a tu Pokédex
        </h2>
    
